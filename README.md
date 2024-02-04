@@ -9,12 +9,26 @@ Micropython Generic Thermistor Library is a basic software module designed to si
 - New thermistors only require one line of code!
 
 ## Installation - Hardware
+Figure 1 demonstrates the expected wiring scheme. 
+R1 and the thermistor cannot be swapped with this library; 
+the code assumes the thermistor is on the ground side of the voltage divider.
+
+![Figure 1 - Wiring Diagram](images/schematic.png)
+
+Notes:
+- The resistance of R1 should be similar to the nominal resistance of the thermistor
+- Thermistor nominal resistance and beta values can be found on the thermistor datasheet
+- Thermistor is assumed to be NTC
 
 ## Installation - Software
 1. Have a Micropython environment set up on something; for example, an ESP32
 2. Upload the thermistor.py file onto the Micropython device; upload steps vary based on familiarity with the terminal, OS, and/or IDE. You can create a new file named thermistor.py on the embedded device and copy-paste the code into the file.
 3. Configure the object constructor "Thermistor" with your thermistor's beta & nominal resistance values and with your voltage divider ohm value.
 4. See the example main.py file
+
+## Warnings
+- This code was only tested on a single ESP32, with a single version of Micropython. Your mileage may vary.
+- This code does not have thermal runaway protection; use heating devices at your own risk.
 
 
 
