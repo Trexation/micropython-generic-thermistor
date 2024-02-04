@@ -14,7 +14,7 @@ Micropython Generic Thermistor Library is a basic software module designed to si
 1. Have a Micropython environment set up on something; for example, an ESP32
 2. Upload the thermistor.py file onto the Micropython device; upload steps vary based on familiarity with the terminal, OS, and/or IDE. You can create a new file named thermistor.py on the embedded device and copy-paste the code into the file.
 3. Configure the object constructor "Thermistor" with your thermistor's beta & nominal resistance values and with your voltage divider ohm value.
-4. See the example
+4. See the example main.py file
 
 
 
