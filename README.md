@@ -23,7 +23,7 @@ Notes:
 ## Installation - Software
 1. Have a Micropython environment set up on something; for example, an ESP32
 2. Upload the thermistor.py file onto the Micropython device; upload steps vary based on familiarity with the terminal, OS, and/or IDE. You can create a new file named thermistor.py on the embedded device and copy-paste the code into the file.
-3. Configure the object constructor "Thermistor" with your values. The below example is using pin 4 on an ESP 32 with a 10k ohm NTC, beta=3425, thermistor and 10k ohm voltage divider. Make sure you use your own values here!
+3. Configure the object constructor "Thermistor" with your values. The below example uses pin 4 on an ESP 32 with a 10k ohm NTC, beta=3435, thermistor, and 10k ohm voltage divider. Make sure you use your own values here!
 ```python
 therm = Thermistor(ADC(4, atten=ADC.ATTN_11DB), beta=3435, therm_ohm=10_000, divider_ohm=10_000)
 ```
